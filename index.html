@@ -42,13 +42,17 @@
             <img src = "assets/images/miro_ss.png">
         </section>
         <aside id="work">
-            <section>
+            <nav class="sites">
                 <h2>Samples of my Work</h2>
-                <nav class="sites">
-                    <ul>
-                        <li>
-                            <panel>
-                            <img class ="picPos" src="assets/images/miro_ss.png" alt="Miro Website" data-pos ="1">
+                <span class ="leftArrow">←</span>
+                <span class="rightArrow">→</span>
+                    <section>
+                    <ul class="slideHolder">
+                        <li class="current-slide slide" data-slide="0">
+                            <ul>
+                                <li>
+                            <panel data-pos ="0">
+                            <img class ="picPos" src="assets/images/miro_ss.png" alt="Miro Website">
                                 <div class="content">
                                     <h3>Miro Website</h3>
                                     <p>Mock Apartment WebSite that uses the Bootstrap Framework and features a responsive design with some custom javascript and css as well.</p>
@@ -64,12 +68,12 @@
                             </panel>
                         </li>
                         <li>
-                            <panel>
-                            <img class ="picPos" src="assets/images/quizsite_ss.png" alt="X-men Trivia" data-pos ="2">
+                            <panel data-pos ="1">
+                            <img class ="picPos" src="assets/images/quizsite_ss.png" alt="X-men Trivia" >
                                
                                     <div class="content">
                                         <h3>X-men Trivia Quiz</h3>
-                                        <p>A Responsive Website that uses javascipt and the moment.js to ask trivia questions then saves the user's score to local storage. This site also features a responsive deisgn.</p>
+                                        <p>A Responsive Website that uses javascipt and moment.js to ask trivia questions then saves the user's score to local storage. This site also features a responsive deisgn.</p>
                                         <div class="links">
                                             <span>
                                             <a href="https://github.com/Damerian00/QuizBowl" target="_blank" title="View Repo">📂</a>
@@ -82,12 +86,12 @@
                                 </panel>
                             </li>
                         <li>
-                            <panel>
-                            <img class ="picPos" src="assets/images/worksite_ss.png"  alt="Work Scheduler" data-pos ="3">
+                            <panel data-pos ="2">
+                            <img class ="picPos" src="assets/images/worksite_ss.png"  alt="Work Scheduler" >
                                
                                     <div class="content">
                                         <h3>Work Scheduler</h3>
-                                        <p>Moment.js and Local Storage</p>
+                                        <p>This project uses moment.js to retireve the current time and event listeners to store input into local storage to display when the page loads. </p>
                                         <div class="links">
                                 <span>
                                         <a href="https://github.com/Damerian00/workScheduler" target="_blank" title="View Repo">📂</a>
@@ -99,12 +103,16 @@
                                 </div>
                                 </panel>
                             </li>
+                            </ul>
+                            </li>
+                        <li class = "next_slide slide" data-slide="1">
+                            <ul>    
                         <li>
-                            <panel>
-                            <img class ="picPos" src="assets/images/passsite_ss.jpg" alt="Password Generator" data-pos ="4">
+                            <panel data-pos ="3">
+                            <img class ="picPos" src="assets/images/passsite_ss.jpg" alt="Password Generator" >
                                     <div class="content">
                                         <h3>Password Generator</h3>
-                                        <p>Local Storage w/ random math</p>
+                                        <p>This project is a password generator that allows a user to create a random password based off certain criteria they enter. This one doesn't use alerts to make prompts instead it is all done with form elements.</p>
                                     <div class="links">
                                     <span>
                                         <a href="https://github.com/Damerian00/passwordGen" target="_blank" title="View Repo">📂</a>
@@ -117,11 +125,11 @@
                                 </panel>
                             </li>
                         <li>
-                            <panel>
-                            <img class ="picPos" src="assets/images/bm_ss.JPG" alt="Battle Masters Website" data-pos ="5">
+                            <panel data-pos ="4">
+                            <img class ="picPos" src="assets/images/bm_ss.JPG" alt="Battle Masters Website" >
                                     <div class="content">
                                         <h3>Battle Masters Game</h3>
-                                        <p>Game written in Javascript</p>
+                                        <p>This is a game that is written entirely in javascript with very minimal use of HTML and CSS. I created it as something to expand upon as well as to teach myself JavaScript.</p>
                                     <div class="links">
                                     <span>
                                         <a href="https://github.com/Damerian00/BattleMasters" target="_blank" title="View Repo">📂</a>
@@ -134,11 +142,11 @@
                                 </panel>
                         </li>
                         <li>
-                            <panel>
-                        <img class ="picPos" src="assets/images/roosterImg.JPG" alt="Employee Rooster Site" data-pos ="6">
+                            <panel data-pos ="5">
+                        <img class ="picPos" src="assets/images/roosterImg.JPG" alt="Employee Rooster Site" >
                             <div class="content">
                                 <h3>Employee Generator</h3>
-                                <p>Geneated in NodeJS</p>
+                                <p>This project's goal was to create a a JavaScript file that can be run using node to create an employee rooster for a company in an html format based on users responses to questions that are asked in the index.js file. It utilizes inquirer to ask the questions and jest to utilize testing of the javascript test files.</p>
                             <div class="links">
                             <span>
                                 <a href="https://github.com/Damerian00/hwk08TeamGenerator" target="_blank" title="View Repo">📂</a>
@@ -149,13 +157,17 @@
                             </div>
                         </div>
                         </panel>
+                        </li>
+                        </ul>
                 </li>
+                <li class="slide" data-slide="2">
+                    <ul>
             <li>
-                <panel>
-            <img class ="picPos" src="assets/images/employeeTrack.png" alt="Employee Tracker" data-pos ="7">
+                <panel data-pos ="6">
+            <img class ="picPos" src="assets/images/employeeTrack.png" alt="Employee Tracker" >
                 <div class="content">
                     <h3>Employee Tracker</h3>
-                    <p>Uses Inquirer.JS</p>
+                    <p>My work on this project was done on the back-end by using mySQl to make my requests to perform CDRUD opperations that would update a database of tables It uses node.js, mysql2, express, and inquirer to complete this task.</p>
                     <div class="links">
                 <span>
                         <a href="https://github.com/Damerian00/hwk10EmployeeTracker" target="_blank" title="View Repo">📂</a>
@@ -167,6 +179,8 @@
             </div>
             </panel>
     </li>
+    </ul>
+    </li>
                     </ul>
                 </nav>
             </section>
@@ -174,8 +188,7 @@
     </main>
     <footer id="contactMe">
         <section>
-            <h2>Contact</h2>
-            <h2>Me</h2>
+            <h2>Contact Me</h2>
         </section>
         <section>
             <nav class="foot">
