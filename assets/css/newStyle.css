@@ -1,0 +1,183 @@
+:root {
+    --primaryColor: rgba(69, 153, 181, 1);
+    --secondaryColor: rgb(1, 19, 33, 1);
+    --whiteColor : rgb(213, 213, 213);
+    scroll-behavior: smooth;
+  }
+
+body{background: -moz-linear-gradient(-45deg, #030B11 0%, #144E75 50%, #020609 100%);
+    background: -webkit-linear-gradient(-45deg, #030B11 0%, #144E75 50%, #020609 100%);
+    background: linear-gradient(135deg, #030B11 0%, #144E75 50%, #020609 100%);}
+
+header{    display: flex;
+        flex-direction: column;}
+
+.off-right{
+    position: absolute;
+    margin: 1vh 3rem 0 0;
+    right: 0;
+}        
+
+.brand {
+    margin-right:3rem;
+    font-family: "MonteCarlo", cursive;
+    font-family: "Source Code Pro", monospace;
+    font-family: "Style Script", cursive;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    color: var(--whiteColor);
+    font-weight: 700;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-align: right;
+    
+}
+
+.brand h1{
+
+}
+.brand p{
+
+}
+
+
+
+header > nav {
+
+
+}
+
+.head {
+margin-top: -3vh;
+}
+
+.head ul{
+    text-align: center;
+}
+
+.head li{
+    width: 50%;
+}
+
+.head a{
+    color: var(--whiteColor);
+    font-size: 2rem;
+}
+
+.head li:hover{
+    /* background-color: black; */
+    padding:1vh;
+}
+.head li:hover > a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: rgba(20, 4, 4, 0.664);
+    background-color: #232323;
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 20px rgba(24, 228, 255, 0.663), 0 0 30px rgba(24, 228, 255, 0.663), 0 0 40px rgba(24, 228, 255, 0.663), 0 0 55px rgba(24, 228, 255, 0.663), 0 0 75px rgba(24, 228, 255, 0.663)
+}
+
+.headImg{
+    position: absolute;
+    left: 0;
+    width: 25%;
+    overflow: hidden;
+    height: auto;
+}
+
+.backGroundimg{
+
+}
+.backGroundimg span{
+    position: relative;
+    bottom: 11vh;
+
+}
+
+.subTitle{
+    color: var(--secondaryColor);
+  font-size: 26px;
+  font-family: "MonteCarlo", cursive;
+  font-family: "Style Script", cursive;
+  background-color: rgba(53, 129, 161, 0.4);
+  padding: 8px;
+  border-radius: 15px;
+  text-align: center;
+}
+main{
+display: flex;
+flex-direction: row;
+}
+
+#aboutMe{
+flex:1;
+margin: 0 1rem;
+}
+
+
+#aboutMe section{
+
+}
+#aboutMe h2{
+    color:var(--whiteColor);
+    margin:1rem;
+}
+#aboutMe p{
+    color: var(--whiteColor);
+    width: 65%;
+}
+.profilePic{
+        width: 200px;
+        border: 2px solid black;
+        margin: 3rem 3rem 1rem;
+        
+}
+
+#work{
+    flex:2;
+    
+}
+
+.featured{
+    z-index: 289;
+    flex: 2;
+    width: 33%;
+    position: absolute;
+    background-color: black;
+    height: 90vh;
+    overflow: hidden;
+    left: 23vw;
+}
+.featured img{
+    width:100%;
+    margin: 25% 0;
+}
+.sites{
+margin-top: 36vh;
+
+}
+.sites ul{
+display:flex;
+flex-direction: column;
+
+}
+.sites ul li panel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25vw;
+    padding: .25rem;
+}
+.sites img {
+    flex: 1;
+    width: 190px;
+    height: 190px;
+}
+.content{
+    flex:2;
+    padding:4vh 2rem 0;
+    color: var(--whiteColor);
+}
+#work .links{
+    margin-top: 3vh;
+
+}

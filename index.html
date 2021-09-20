@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
     <link rel="stylesheet" href="assets/css/newStyle.css">
 </head>
 
 <body>
     <header>
-        <div class="brand">Patrick Price</div>
+        <div class = "off-right">
+        <div class="brand">
+            <h1>Patrick Price</h1>
+            <p>Web Coder</p>
+        </div>
         <nav class="head">
             <ul>
                 <li><a href="#aboutMe">About Me</a></li>
@@ -22,173 +25,152 @@
                 <li><a href="https://my.indeed.com/p/patrickp-6d75hwd" target="_blank">Resume</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="headImg">
-        <div class="backGroundimg">
-            <img src="assets/images/bgimg.jpg" alt="Backgorund Image">
-            <span>
-                <p class="subTitle">Providing Guidance for the Lost</p>
-            </span>
         </div>
-    </div>
+    </header>
     <main>
         <panel id="aboutMe">
             <section>
-                <h2>About</h2>
-                <h2>Me</h2>
-            </section>
-            <section>
-                <img src = "assets/images/headshot.jpeg" class="profilePic" alt ="profile pic">
+                <img src = "assets/images/headshot.jpeg" class="profilePic" alt ="profile pic" >
+                <h2>About Me</h2>
                 <p> My name is Patrick, I have been exploring the world of coding since High School when I first started writing programs for my graphing calculator. Since then I have learned a few languages such as: HTML5, JavaScript, CSS, and some Java. Currently all the sites on this page are mock sites that were made as an assignment for a coding class environment or something I created to learn and test my skills out.</p>
                 <br>
                 <p>The featured site that I’m most proud of is the one that is a mockup of The Miro apartment complex site. Which was created to mirror the site at the time I created it. It includes stock images and my own custom CSS and coding. The Battle Masters html is a game that I wrote in JavaScript that uses very minimal HTML. Writing the code for this site was challenging, but it also was rewarding at the same time since it helped me to understand and learn JavaScript. The other sites are ones that I created for classroom assignments.
                 </p>
             </section>
         </panel>
-        <panel id="work">
+        <section class="featured">
+            <img src = "assets/images/miro_ss.png">
+        </section>
+        <aside id="work">
             <section>
-                <h2>Work</h2>
-            </section>
-            <section>
+                <h2>Samples of my Work</h2>
                 <nav class="sites">
                     <ul>
-                        <li class="featured">
-                                <img src="assets/images/miro_ss.png" alt="Miro Website">
-                            <span>
+                        <li>
+                            <panel>
+                            <img class ="picPos" src="assets/images/miro_ss.png" alt="Miro Website" data-pos ="1">
                                 <div class="content">
                                     <h3>Miro Website</h3>
-                                    <p>Bootstrap Framework</p>
-                                </div>
-                            </span>
+                                    <p>Mock Apartment WebSite that uses the Bootstrap Framework and features a responsive design with some custom javascript and css as well.</p>
+                                    <div class="links">
+                                        <span>
+                                        <a href ="https://github.com/Damerian00/miroMocksite" target="_blank" title="View Repo" >📂</a>
+                               </span>
                             <span>
-                                <div class="repoLink">
-                                    <a href ="https://github.com/Damerian00/miroMocksite" target="_blank" >View Repo</a>
-                                </div>
-                            </span>
-                            <span>
-                                <div class="siteLink">
-                                    <a href="https://damerian00.github.io/miroMocksite" target="_blank">View Demo</a>
-                                </div>
-                            </span>
+                                    <a href="https://damerian00.github.io/miroMocksite" target="_blank" title="View Demo">🔍</a>
+                                </span>
+                            </div>
+                            </div>
+                            </panel>
                         </li>
                         <li>
-                            <img src="assets/images/quizsite_ss.png" alt="X-men Trivia">
-                               <span>
+                            <panel>
+                            <img class ="picPos" src="assets/images/quizsite_ss.png" alt="X-men Trivia" data-pos ="2">
+                               
                                     <div class="content">
                                         <h3>X-men Trivia Quiz</h3>
-                                        <p>Responsive Website using local Sotrage</p>
+                                        <p>A Responsive Website that uses javascipt and the moment.js to ask trivia questions then saves the user's score to local storage. This site also features a responsive deisgn.</p>
+                                        <div class="links">
+                                            <span>
+                                            <a href="https://github.com/Damerian00/QuizBowl" target="_blank" title="View Repo">📂</a>
+                                    </span>
+                                    <span>
+                                            <a href="https://damerian00.github.io/QuizBowl/" target="_blank" title="View Demo">🔍</a>
+                                        </span>
                                     </div>
-                                </span>
-                                <span>
-                                    <div class="repoLink">
-                                        <a href="https://github.com/Damerian00/QuizBowl" target="_blank">View Repo</a>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div class="siteLink">
-                                        <a href="https://damerian00.github.io/QuizBowl/" target="_blank">View Demo</a>
-                                    </div>
-                                </span>
+                                </div>
+                                </panel>
                             </li>
                         <li>
-                            <img src="assets/images/worksite_ss.png"  alt="Work Scheduler">
-                               <span>
+                            <panel>
+                            <img class ="picPos" src="assets/images/worksite_ss.png"  alt="Work Scheduler" data-pos ="3">
+                               
                                     <div class="content">
                                         <h3>Work Scheduler</h3>
                                         <p>Moment.js and Local Storage</p>
-                                    </div>
-                                </span>
+                                        <div class="links">
                                 <span>
-                                    <div class="repoLink">
-                                        <a href="https://github.com/Damerian00/workScheduler" target="_blank">View Repo</a>
+                                        <a href="https://github.com/Damerian00/workScheduler" target="_blank" title="View Repo">📂</a>
+                                    </span>
+                                    <span>
+                                            <a href="https://damerian00.github.io/workScheduler/" target="_blank" title="View Demo">🔍</a>
+                                        </span>
                                     </div>
-                                </span>
-                                <span>
-                                    <div class="siteLink">
-                                        <a href="https://damerian00.github.io/workScheduler/" target="_blank">View Demo</a>
-                                    </div>
-                                </span>
+                                </div>
+                                </panel>
                             </li>
                         <li>
-                            <img src="assets/images/passsite_ss.jpg" alt="Password Generator">
-                                <span>
+                            <panel>
+                            <img class ="picPos" src="assets/images/passsite_ss.jpg" alt="Password Generator" data-pos ="4">
                                     <div class="content">
                                         <h3>Password Generator</h3>
                                         <p>Local Storage w/ random math</p>
+                                    <div class="links">
+                                    <span>
+                                        <a href="https://github.com/Damerian00/passwordGen" target="_blank" title="View Repo">📂</a>
+                                    </span>
+                                    <span>
+                                     <a href="https://damerian00.github.io/passwordGen/" target="_blank" title="View Demo">🔍</a>
+                                    </span>
                                     </div>
-                                </span>
-                                <span>
-                                    <div class="repoLink">
-                                        <a href="https://github.com/Damerian00/passwordGen" target="_blank">View Repo</a>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div class="siteLink">
-                                        <a href="https://damerian00.github.io/passwordGen/" target="_blank">View Demo</a>
-                                    </div>
-                                </span>
+                                </div>
+                                </panel>
                             </li>
                         <li>
-                            <img src="assets/images/bm_ss.JPG" alt="Battle Masters Website">
-                                <span>
+                            <panel>
+                            <img class ="picPos" src="assets/images/bm_ss.JPG" alt="Battle Masters Website" data-pos ="5">
                                     <div class="content">
                                         <h3>Battle Masters Game</h3>
                                         <p>Game written in Javascript</p>
+                                    <div class="links">
+                                    <span>
+                                        <a href="https://github.com/Damerian00/BattleMasters" target="_blank" title="View Repo">📂</a>
+                                    </span>
+                                    <span>
+                                     <a href="https://damerian00.github.io/BattleMasters/" target="_blank" title="View Demo">🔍</a>
+                                        </span>
                                     </div>
-                                </span>
-                                <span>
-                                    <div class="repoLink">
-                                        <a href="https://github.com/Damerian00/BattleMasters" target="_blank">View Repo</a>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div class="siteLink">
-                                        <a href="https://damerian00.github.io/BattleMasters/" target="_blank">View Demo</a>
-                                    </div>
-                                </span>
+                                </div>
+                                </panel>
                         </li>
                         <li>
-                        <img src="assets/images/roosterImg.JPG" alt="Employee Rooster Site">
-                        <span>
+                            <panel>
+                        <img class ="picPos" src="assets/images/roosterImg.JPG" alt="Employee Rooster Site" data-pos ="6">
                             <div class="content">
                                 <h3>Employee Generator</h3>
                                 <p>Geneated in NodeJS</p>
+                            <div class="links">
+                            <span>
+                                <a href="https://github.com/Damerian00/hwk08TeamGenerator" target="_blank" title="View Repo">📂</a>
+                            </span>
+                            <span>
+                                    <a href="https://www.youtube.com/watch?v=jHObLzd6yqQ" target="_blank" title="View Demo">🔍</a>
+                                </span>
                             </div>
-                        </span>
-                        <span>
-                            <div class="repoLink">
-                                <a href="https://github.com/Damerian00/hwk08TeamGenerator" target="_blank">View Repo</a>
-                            </div>
-                        </span>
-                        <span>
-                            <div class="siteLink">
-                                <a href="https://www.youtube.com/watch?v=jHObLzd6yqQ" target="_blank">View Video Demo</a>
-                            </div>
-                        </span>
+                        </div>
+                        </panel>
                 </li>
             <li>
-            <img src="assets/images/employeeTrack.png" alt="Employee Tracker">
-            <span>
+                <panel>
+            <img class ="picPos" src="assets/images/employeeTrack.png" alt="Employee Tracker" data-pos ="7">
                 <div class="content">
                     <h3>Employee Tracker</h3>
                     <p>Uses Inquirer.JS</p>
+                    <div class="links">
+                <span>
+                        <a href="https://github.com/Damerian00/hwk10EmployeeTracker" target="_blank" title="View Repo">📂</a>
+                </span>
+                <span>
+                        <a href="https://www.youtube.com/watch?v=_3eFkm6OM80" target="_blank" title="View Demo">🔍</a>
+                    </span>
                 </div>
-            </span>
-            <span>
-                <div class="repoLink">
-                    <a href="https://github.com/Damerian00/hwk10EmployeeTracker" target="_blank">View Repo</a>
-                </div>
-            </span>
-            <span>
-                <div class="siteLink">
-                    <a href="https://www.youtube.com/watch?v=_3eFkm6OM80" target="_blank">View Video Demo</a>
-                </div>
-            </span>
+            </div>
+            </panel>
     </li>
                     </ul>
                 </nav>
             </section>
-        </panel>
+        </aside>
     </main>
     <footer id="contactMe">
         <section>
