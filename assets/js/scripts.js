@@ -120,8 +120,24 @@ function moveNext() {
     }
   }
 
+  function presentFeature(event){
+    let src = event.target.getAttribute("src");
+   
+    let featured = document.querySelector('.starred')
+
+    featured.setAttribute("src", src);
+    
+
+  }
 
 //   document.querySelector('.nextSlide').addEventListener('click', moveNext);
 //   document.querySelector('.prevSlide').addEventListener('click', movePrev);
-  
+let featurePic = document
+.querySelectorAll('.picPos');
+if (featurePic){
+  featurePic.forEach(el => {
+    
+    el.addEventListener('click', presentFeature);
+  });
+}  
     
