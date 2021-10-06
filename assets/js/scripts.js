@@ -1,8 +1,7 @@
 /* js provided by https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9 */
 
-let itemClassName = "slide";
-    items = document.getElementsByClassName(itemClassName),
-    totalItems = items.length,
+ let items = document.querySelectorAll('.slide'),
+   totalItems = items.length,
     slide = 0,
     moving = true;
 
@@ -79,12 +78,12 @@ function disableInteraction() {
         // Now we've worked out where we are and where we're going, 
         // by adding/removing classes we'll trigger the transitions.
         // Reset old next/prev elements to default classes
-        items[oldPrevious].className = itemClassName;
-        items[oldNext].className = itemClassName;
+        items[oldPrevious].className = "slide";
+        items[oldNext].className = "slide";
         // Add new classes
-        items[newPrevious].className = itemClassName + " prev";
-        items[slide].className = itemClassName + " active";
-        items[newNext].className = itemClassName + " next";
+        items[newPrevious].className = "slide" + " prev";
+        items[slide].className = "slide" + " active";
+        items[newNext].className = "slide" + " next";
      
     }
   }

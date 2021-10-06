@@ -126,20 +126,20 @@ margin: 0 1rem;
 
 #work{
     flex:2;
-    margin-left: 15vw;
 }
 
 .featured{
     z-index: 289;
     width: 33%;
-    position: absolute;
+    position: relative;
     height: 90vh;
-    left: 20vw;
+    left: 0;
     background: rgb(6,23,35);
     background: -moz-linear-gradient(-45deg, rgb(6,23,35) 0%, rgb(38,39,40) 45%, rgb(6,23,35) 100%);
     background: -webkit-linear-gradient(-45deg, rgb(6,23,35) 0%, rgb(38,39,40) 45%, rgb(6,23,35) 100%);
     background: linear-gradient(135deg, rgb(6,23,35) 0%, rgb(38,39,40) 45%, rgb(6,23,35) 100%);
     margin-left: 1vw;
+    margin-top:10vh;
 }
 .featured img{
     width:100%;
@@ -149,7 +149,7 @@ margin: 0 1rem;
 
 .sites{
 margin-top: 31vh;
-padding-left: 20vw;
+padding-left: 2vw;
 background: rgb(6,23,35);
 background: -moz-linear-gradient(-45deg, rgb(6,23,35) 0%, rgb(23,88,132) 0%, rgb(6,23,35) 100%);
 background: -webkit-linear-gradient(-45deg, rgb(6,23,35) 0%, rgb(23,88,132) 0%, rgb(6,23,35) 100%);
@@ -180,6 +180,10 @@ right: 1rem;
 }
 .picPos{
     cursor: pointer;
+}
+.slide > ul > li > section{
+    display: flex;
+    flex-direction: row;
 }
 .slideWrapper{
     overflow: hidden;
@@ -245,7 +249,7 @@ right: 1rem;
 }
 .content{
     flex:2;
-    padding:3vh 2rem 0;
+    padding:0 2rem 0;
     color: var(--whiteColor);
     
 }
@@ -299,7 +303,8 @@ right: 1rem;
         display: block;
     }
  #aboutMe{
-     margin:0;
+     margin:0 0 2vh 0;
+     
  }
  #aboutMe p{
     width: 85%;
@@ -335,7 +340,7 @@ padding:1rem;
 }
 .content{
     padding: 1vh 0;
-    margin: 1vh 0;
+    margin: 1vh 1rem;
 }
 
 #contactMe{
@@ -345,7 +350,7 @@ padding:1rem;
 .foot li {
     padding:0 .25rem;
 }
-    .featured{visibility: hidden;}
+    .featured{visibility: hidden;display: none;}
 
 
 
@@ -417,7 +422,7 @@ body{
 }
 #contactMe{
 position: relative;
-top: -43vh
+top: 0
 }
 .foot{
     font-size:3rem;
@@ -425,20 +430,25 @@ top: -43vh
 }
 .foot ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .foot li {
-    margin: 2vh 2rem;
+    margin: 2vh .5rem;
+}
+#aboutMe p {
+    width: 282px;
+    height: 20vh;
+    overflow-y: scroll;
 }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
 
 
- .featured{
+ /* .featured{
     left:323px;
     width:33%;
-}
+} */
 .brand{
     margin:1vh  0;
     font-size:1rem;
@@ -451,7 +461,7 @@ top: -43vh
     overflow: hidden;
 }
 #aboutMe p {
-    width: 282px;
+    width: 214px;
     height: 20vh;
     overflow-y: scroll;
 }
@@ -487,7 +497,11 @@ top: -43vh
     .featured img {
         width: 650px;
         height: auto;
-        margin: 2vh -10vw 2vh 10vw;
+        margin: 0;
+    }
+    #aboutMe p{
+        overflow-y: scroll;
+        height: 19vh;
     }
     .sites{
         padding-left: 2vw;
